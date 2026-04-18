@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(197, 142, 68, 0.14), transparent 28%),
+    radial-gradient(circle at top right, rgba(50, 85, 75, 0.1), transparent 24%),
+    linear-gradient(180deg, #fffaf3 0%, #fffefb 30%, #f8f1e7 100%);
+  color: #101321;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(197, 142, 68, 0.24);
+  color: #101321;
+}
+
+@layer base {
+  * {
+    @apply border-black/10;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  .section-space {
+    @apply py-16 md:py-24;
+  }
+
+  .surface-panel {
+    @apply rounded-[28px] border border-white/70 bg-white/75 shadow-soft backdrop-blur;
+  }
+
+  .section-kicker {
+    @apply text-xs font-semibold uppercase tracking-[0.3em] text-clay;
+  }
+
+  .display-title {
+    @apply font-display tracking-[-0.04em] text-gray-900;
+  }
+
+  .muted-copy {
+    @apply text-sm leading-7 text-gray-500 md:text-base;
+  }
+
+  .input-shell {
+    @apply w-full rounded-2xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 shadow-sm outline-none transition;
+  }
+
+  .input-shell:focus {
+    @apply border-amber-400 ring-2 ring-amber-100;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition;
+  }
+
+  .button-primary:hover {
+    @apply -translate-y-0.5 bg-gray-800;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-gray-200 bg-white px-6 py-3 text-sm font-semibold text-gray-900 transition;
+  }
+
+  .button-secondary:hover {
+    @apply -translate-y-0.5 border-amber-300 text-clay;
+  }
+}
