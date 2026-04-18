@@ -7,6 +7,8 @@ export type Product = {
   idealUseCases: string[];
   highlight: string;
   gradient: string;
+  imageUrl: string;
+  imageAlt: string;
 };
 
 export const siteConfig = {
@@ -41,7 +43,9 @@ export const products: Product[] = [
       "Perfect voor cafés met veel passage, feestzalen, tentfeesten en promotionele evenementen.",
     idealUseCases: ["Afterwork events", "Studentencafés", "Kermisconcepten"],
     highlight: "Publiekstrekker met hoge speelfrequentie",
-    gradient: "from-amber-500 via-orange-500 to-red-700"
+    gradient: "from-amber-500 via-orange-500 to-red-700",
+    imageUrl: "https://source.unsplash.com/800x600/?boxing+machine+arcade",
+    imageAlt: "boksmachine huren Vlaanderen"
   },
   {
     slug: "golfbiljart",
@@ -54,7 +58,9 @@ export const products: Product[] = [
       "Ideaal voor dorpscafés, feestzalen, clubs en locaties met een traditioneel publiek.",
     idealUseCases: ["Thema-avonden", "Familiefeesten", "Verenigingslokalen"],
     highlight: "Authentieke Vlaamse klassieker",
-    gradient: "from-emerald-500 via-teal-500 to-forest"
+    gradient: "from-emerald-500 via-teal-500 to-forest",
+    imageUrl: "https://source.unsplash.com/800x600/?billiards+pool+table",
+    imageAlt: "golfbiljart huren Vlaanderen"
   },
   {
     slug: "pooltafel",
@@ -67,7 +73,9 @@ export const products: Product[] = [
       "Sterke keuze voor cafés, sportbars, jeugdhuizen en multifunctionele eventruimtes.",
     idealUseCases: ["Sportbars", "Bedrijfslounges", "Jeugdhuiswerking"],
     highlight: "Premium uitstraling met lange verblijfsduur",
-    gradient: "from-sky-500 via-cyan-500 to-blue-800"
+    gradient: "from-sky-500 via-cyan-500 to-blue-800",
+    imageUrl: "https://source.unsplash.com/800x600/?pool+table+bar",
+    imageAlt: "pooltafel huren Vlaanderen"
   },
   {
     slug: "flipperkast",
@@ -80,7 +88,9 @@ export const products: Product[] = [
       "Uitstekend voor conceptcafés, retro-events, mancaves en belevingsruimtes.",
     idealUseCases: ["Retro parties", "Concepthoreca", "VIP-hoeken"],
     highlight: "Nostalgische eyecatcher met premium feel",
-    gradient: "from-fuchsia-500 via-pink-500 to-rose-700"
+    gradient: "from-fuchsia-500 via-pink-500 to-rose-700",
+    imageUrl: "https://source.unsplash.com/800x600/?pinball+machine",
+    imageAlt: "flipperkast huren Vlaanderen"
   },
   {
     slug: "tafelvoetbal",
@@ -93,7 +103,9 @@ export const products: Product[] = [
       "Ideaal voor cafés, jeugdhuizen, bedrijfsruimtes en events met groepsdynamiek.",
     idealUseCases: ["Afterwork toernooien", "Teambuildings", "Sportcafés"],
     highlight: "Toegankelijk, snel en altijd competitief",
-    gradient: "from-lime-400 via-green-500 to-emerald-700"
+    gradient: "from-lime-400 via-green-500 to-emerald-700",
+    imageUrl: "https://source.unsplash.com/800x600/?foosball+table",
+    imageAlt: "tafelvoetbal huren Vlaanderen"
   },
   {
     slug: "basketbalautomaat",
@@ -106,7 +118,9 @@ export const products: Product[] = [
       "Geschikt voor events, feestzalen, fanzones en locaties met een speels karakter.",
     idealUseCases: ["Bedrijfsevents", "Familiedagen", "Fanzones"],
     highlight: "Energieke attractie met veel zichtbaarheid",
-    gradient: "from-orange-400 via-amber-500 to-yellow-600"
+    gradient: "from-orange-400 via-amber-500 to-yellow-600",
+    imageUrl: "https://source.unsplash.com/800x600/?arcade+basketball",
+    imageAlt: "basketbalautomaat huren Vlaanderen"
   },
   {
     slug: "darts",
@@ -119,7 +133,9 @@ export const products: Product[] = [
       "Zeer geschikt voor cafés, feestzalen, bedrijfslounges en recreatieruimtes.",
     idealUseCases: ["Dartavonden", "Afterwork corners", "Recreatiezones"],
     highlight: "Compacte klassieker met hoge herhaalwaarde",
-    gradient: "from-slate-400 via-zinc-500 to-neutral-800"
+    gradient: "from-slate-400 via-zinc-500 to-neutral-800",
+    imageUrl: "https://source.unsplash.com/800x600/?darts+game",
+    imageAlt: "darts huren Vlaanderen"
   },
   {
     slug: "airhockey",
@@ -132,7 +148,9 @@ export const products: Product[] = [
       "Uitstekend voor recreatiezones, eventhallen, family days en moderne cafés.",
     idealUseCases: ["Arcade corners", "Corporate events", "Family entertainment"],
     highlight: "Snelle actie met moderne uitstraling",
-    gradient: "from-cyan-400 via-sky-500 to-indigo-700"
+    gradient: "from-cyan-400 via-sky-500 to-indigo-700",
+    imageUrl: "https://source.unsplash.com/800x600/?air+hockey+table",
+    imageAlt: "air hockey tafel huren Vlaanderen"
   },
   {
     slug: "hammerspel",
@@ -145,7 +163,9 @@ export const products: Product[] = [
       "Perfect voor festivals, tentfeesten, bedrijfsdagen en outdoor events.",
     idealUseCases: ["Kermisstands", "Openluchtfeesten", "Brand activations"],
     highlight: "Kermisgevoel met sterke fotowaarde",
-    gradient: "from-red-500 via-orange-500 to-yellow-500"
+    gradient: "from-red-500 via-orange-500 to-yellow-500",
+    imageUrl: "https://source.unsplash.com/800x600/?arcade+hammer+game",
+    imageAlt: "hammerspel huren Vlaanderen"
   },
   {
     slug: "arcade-games",
@@ -158,7 +178,9 @@ export const products: Product[] = [
       "Ideaal voor conceptbars, eventcorners, recreatieruimtes en pop-up belevingen.",
     idealUseCases: ["Retro nights", "Game corners", "Beurzen en activaties"],
     highlight: "Veel variatie en opvallende beleving",
-    gradient: "from-violet-500 via-indigo-500 to-blue-700"
+    gradient: "from-violet-500 via-indigo-500 to-blue-700",
+    imageUrl: "https://source.unsplash.com/800x600/?arcade+game+machine",
+    imageAlt: "arcade games huren Vlaanderen"
   },
   {
     slug: "gezelschapsspelen",
@@ -171,7 +193,9 @@ export const products: Product[] = [
       "Sterk voor terrassen, tuinfeesten, recepties en bedrijfsevents met veel circulatie.",
     idealUseCases: ["Recepties", "Terrasactivaties", "Familiedagen"],
     highlight: "Flexibel, mobiel en laagdrempelig",
-    gradient: "from-yellow-400 via-lime-400 to-green-500"
+    gradient: "from-yellow-400 via-lime-400 to-green-500",
+    imageUrl: "https://source.unsplash.com/800x600/?board+games+pub",
+    imageAlt: "gezelschapsspelen huren Vlaanderen"
   },
   {
     slug: "ping-pong",
@@ -184,7 +208,9 @@ export const products: Product[] = [
       "Geschikt voor bedrijfsfeesten, terrassen, eventhallen en creatieve horecazaken.",
     idealUseCases: ["Afterworks", "Terrasbeleving", "Informele competities"],
     highlight: "Sportief, toegankelijk en veelzijdig",
-    gradient: "from-teal-400 via-cyan-500 to-sky-700"
+    gradient: "from-teal-400 via-cyan-500 to-sky-700",
+    imageUrl: "https://source.unsplash.com/800x600/?ping+pong+table",
+    imageAlt: "ping pong tafel huren Vlaanderen"
   }
 ];
 

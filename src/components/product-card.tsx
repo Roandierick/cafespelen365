@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
@@ -16,16 +17,26 @@ export function ProductCard({
 
   return (
     <article
-      className="surface-panel h-full overflow-hidden"
+      className="surface-panel group h-full overflow-hidden"
       id={isDetailed ? product.slug : undefined}
     >
-      <div
-        className={`relative flex ${isDetailed ? "h-64 md:h-72" : "h-48"} items-end overflow-hidden bg-gradient-to-br ${product.gradient} p-6 text-white`}
-      >
-        <div className="absolute inset-0 bg-grain opacity-80" />
-        <div className="relative">
+      <div className={`relative overflow-hidden ${isDetailed ? "h-64 md:h-72" : "h-48"}`}>
+        <Image
+          alt={product.imageAlt}
+          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+          height={600}
+          sizes={
+            isDetailed
+              ? "(min-width: 1280px) 50vw, 100vw"
+              : "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+          }
+          src={product.imageUrl}
+          width={800}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/5" />
+        <div className="absolute inset-x-0 bottom-0 p-6 text-white">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/75">
-            Placeholder visual
+            Foto ter illustratie
           </p>
           <h3 className="mt-2 font-display text-3xl leading-none md:text-4xl">{product.name}</h3>
         </div>
