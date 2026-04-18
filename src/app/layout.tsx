@@ -27,7 +27,10 @@ export const metadata: Metadata = {
   },
   description: siteConfig.tagline,
   category: "business",
-  referrer: "origin-when-cross-origin"
+  referrer: "origin-when-cross-origin",
+  verification: {
+    google: "L4ia0eAbACJe4nREVNtk6p8iSN4cQmcJ52ylsW4Q-DY"
+  }
 };
 
 export const viewport: Viewport = {
