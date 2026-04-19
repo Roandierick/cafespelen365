@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.tagline,
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png"
+  },
   category: "business",
   referrer: "origin-when-cross-origin",
   verification: {

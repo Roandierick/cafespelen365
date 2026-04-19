@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -25,19 +26,18 @@ export function Header() {
       <div className="container flex items-center justify-between py-4">
         <Link
           aria-label={`Ga naar de homepage van ${siteConfig.name}`}
-          className="group flex items-center gap-3"
+          className="group flex items-center"
           href="/"
           onClick={() => setIsOpen(false)}
         >
-          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gray-900 text-base font-semibold text-white shadow-soft transition group-hover:-translate-y-0.5">
-            365
-          </div>
-          <div>
-            <div className="font-display text-2xl leading-none text-gray-900">{siteConfig.name}</div>
-            <div className="text-xs uppercase tracking-[0.22em] text-clay">
-              Cafespelen in Vlaanderen
-            </div>
-          </div>
+          <Image
+            alt="Caféspelen 365"
+            className="transition group-hover:-translate-y-0.5"
+            height={50}
+            priority
+            src="/logo.png"
+            width={140}
+          />
         </Link>
         <nav className="hidden items-center gap-2 lg:flex">
           {navigation.map((item) => {
