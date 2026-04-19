@@ -44,7 +44,7 @@ export const products: Product[] = [
     idealUseCases: ["Afterwork events", "Studentencafés", "Kermisconcepten"],
     highlight: "Publiekstrekker met hoge speelfrequentie",
     gradient: "from-amber-500 via-orange-500 to-red-700",
-    imageUrl: "https://picsum.photos/seed/boxing/800/600",
+    imageUrl: "/images/products/boksbal/1.jpg",
     imageAlt: "boksmachine huren Vlaanderen"
   },
   {
@@ -59,7 +59,7 @@ export const products: Product[] = [
     idealUseCases: ["Thema-avonden", "Familiefeesten", "Verenigingslokalen"],
     highlight: "Authentieke Vlaamse klassieker",
     gradient: "from-emerald-500 via-teal-500 to-forest",
-    imageUrl: "https://picsum.photos/seed/billiards/800/600",
+    imageUrl: "/images/products/golfbiljart/1.jpg",
     imageAlt: "golfbiljart huren Vlaanderen"
   },
   {
@@ -74,7 +74,7 @@ export const products: Product[] = [
     idealUseCases: ["Sportbars", "Bedrijfslounges", "Jeugdhuiswerking"],
     highlight: "Premium uitstraling met lange verblijfsduur",
     gradient: "from-sky-500 via-cyan-500 to-blue-800",
-    imageUrl: "https://picsum.photos/seed/pool/800/600",
+    imageUrl: "/images/products/pooltafel/1.jpg",
     imageAlt: "pooltafel huren Vlaanderen"
   },
   {
@@ -89,7 +89,7 @@ export const products: Product[] = [
     idealUseCases: ["Retro parties", "Concepthoreca", "VIP-hoeken"],
     highlight: "Nostalgische eyecatcher met premium feel",
     gradient: "from-fuchsia-500 via-pink-500 to-rose-700",
-    imageUrl: "https://picsum.photos/seed/pinball/800/600",
+    imageUrl: "/images/products/flipperkast/1.jpg",
     imageAlt: "flipperkast huren Vlaanderen"
   },
   {
@@ -104,7 +104,7 @@ export const products: Product[] = [
     idealUseCases: ["Afterwork toernooien", "Teambuildings", "Sportcafés"],
     highlight: "Toegankelijk, snel en altijd competitief",
     gradient: "from-lime-400 via-green-500 to-emerald-700",
-    imageUrl: "https://picsum.photos/seed/foosball/800/600",
+    imageUrl: "/images/products/tafelvoetbal/1.jpg",
     imageAlt: "tafelvoetbal huren Vlaanderen"
   },
   {
@@ -119,7 +119,7 @@ export const products: Product[] = [
     idealUseCases: ["Bedrijfsevents", "Familiedagen", "Fanzones"],
     highlight: "Energieke attractie met veel zichtbaarheid",
     gradient: "from-orange-400 via-amber-500 to-yellow-600",
-    imageUrl: "https://picsum.photos/seed/basketball/800/600",
+    imageUrl: "/images/products/basketbal/1.jpg",
     imageAlt: "basketbalautomaat huren Vlaanderen"
   },
   {
@@ -134,7 +134,7 @@ export const products: Product[] = [
     idealUseCases: ["Dartavonden", "Afterwork corners", "Recreatiezones"],
     highlight: "Compacte klassieker met hoge herhaalwaarde",
     gradient: "from-slate-400 via-zinc-500 to-neutral-800",
-    imageUrl: "https://picsum.photos/seed/darts/800/600",
+    imageUrl: "/images/products/darts/1.jpg",
     imageAlt: "darts huren Vlaanderen"
   },
   {
@@ -149,7 +149,7 @@ export const products: Product[] = [
     idealUseCases: ["Arcade corners", "Corporate events", "Family entertainment"],
     highlight: "Snelle actie met moderne uitstraling",
     gradient: "from-cyan-400 via-sky-500 to-indigo-700",
-    imageUrl: "https://picsum.photos/seed/airhockey/800/600",
+    imageUrl: "/images/products/airhockey/1.jpg",
     imageAlt: "air hockey tafel huren Vlaanderen"
   },
   {
@@ -164,7 +164,7 @@ export const products: Product[] = [
     idealUseCases: ["Kermisstands", "Openluchtfeesten", "Brand activations"],
     highlight: "Kermisgevoel met sterke fotowaarde",
     gradient: "from-red-500 via-orange-500 to-yellow-500",
-    imageUrl: "https://picsum.photos/seed/hammer/800/600",
+    imageUrl: "/images/products/hammerspel/1.jpg",
     imageAlt: "hammerspel huren Vlaanderen"
   },
   {
@@ -179,7 +179,7 @@ export const products: Product[] = [
     idealUseCases: ["Retro nights", "Game corners", "Beurzen en activaties"],
     highlight: "Veel variatie en opvallende beleving",
     gradient: "from-violet-500 via-indigo-500 to-blue-700",
-    imageUrl: "https://picsum.photos/seed/arcade/800/600",
+    imageUrl: "/images/products/arcade/1.jpg",
     imageAlt: "arcade games huren Vlaanderen"
   },
   {
@@ -194,7 +194,7 @@ export const products: Product[] = [
     idealUseCases: ["Recepties", "Terrasactivaties", "Familiedagen"],
     highlight: "Flexibel, mobiel en laagdrempelig",
     gradient: "from-yellow-400 via-lime-400 to-green-500",
-    imageUrl: "https://picsum.photos/seed/boardgames/800/600",
+    imageUrl: "/images/products/gezelschapsspelen/1.jpg",
     imageAlt: "gezelschapsspelen huren Vlaanderen"
   },
   {
@@ -209,7 +209,7 @@ export const products: Product[] = [
     idealUseCases: ["Afterworks", "Terrasbeleving", "Informele competities"],
     highlight: "Sportief, toegankelijk en veelzijdig",
     gradient: "from-teal-400 via-cyan-500 to-sky-700",
-    imageUrl: "https://picsum.photos/seed/pingpong/800/600",
+    imageUrl: "/images/products/pingpong/1.jpg",
     imageAlt: "ping pong tafel huren Vlaanderen"
   }
 ];

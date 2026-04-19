@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 import type { Product } from "@/lib/site-data";
@@ -14,6 +17,7 @@ export function ProductCard({
   variant = "compact"
 }: ProductCardProps) {
   const isDetailed = variant === "detailed";
+  const [hasImageError, setHasImageError] = useState(false);
 
   return (
     <article
@@ -21,19 +25,32 @@ export function ProductCard({
       id={isDetailed ? product.slug : undefined}
     >
       <div className={`relative overflow-hidden ${isDetailed ? "h-64 md:h-72" : "h-48"}`}>
-        <Image
-          alt={product.imageAlt}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-          height={600}
-          sizes={
-            isDetailed
-              ? "(min-width: 1280px) 50vw, 100vw"
-              : "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-          }
-          src={product.imageUrl}
-          width={800}
+        {hasImageError ? (
+          <div className="flex h-full w-full items-center justify-center bg-gray-200 text-sm font-medium text-gray-500">
+            Foto volgt binnenkort
+          </div>
+        ) : (
+          <Image
+            alt={product.imageAlt}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+            height={600}
+            onError={() => setHasImageError(true)}
+            sizes={
+              isDetailed
+                ? "(min-width: 1280px) 50vw, 100vw"
+                : "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+            }
+            src={product.imageUrl}
+            width={800}
+          />
+        )}
+        <div
+          className={`absolute inset-0 ${
+            hasImageError
+              ? "bg-gradient-to-t from-black/25 via-transparent to-transparent"
+              : "bg-gradient-to-t from-black/70 via-black/20 to-black/5"
+          }`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/5" />
         <div className="absolute inset-x-0 bottom-0 p-6 text-white">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/75">
             Foto ter illustratie
