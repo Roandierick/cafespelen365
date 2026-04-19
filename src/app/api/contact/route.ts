@@ -76,7 +76,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: fromEmail,
-      to: siteConfig.email,
+      to: siteConfig.leadEmail,
       replyTo: email,
       subject: `Nieuwe lead: ${company} - ${gameType}`,
       html

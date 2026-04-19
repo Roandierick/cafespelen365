@@ -55,7 +55,6 @@ export function Footer() {
           <div className="mt-5 grid gap-3 text-sm text-white/78">
             <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
             <span>{siteConfig.phone}</span>
-            <span>{siteConfig.address.join(", ")}</span>
             <span>KBO: {siteConfig.kbo}</span>
           </div>
         </div>

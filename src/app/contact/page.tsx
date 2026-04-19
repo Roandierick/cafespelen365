@@ -67,10 +67,6 @@ export default function ContactPage() {
                     <span className="font-semibold text-gray-900">Telefoon:</span> {siteConfig.phone}
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-900">Adres:</span>{" "}
-                    {siteConfig.address.join(", ")}
-                  </div>
-                  <div>
                     <span className="font-semibold text-gray-900">KBO:</span> {siteConfig.kbo}
                   </div>
                   <div>

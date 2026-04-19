@@ -61,13 +61,7 @@ export default function HomePage() {
     vatID: siteConfig.vatNumber,
     areaServed: siteConfig.serviceArea,
     email: siteConfig.email,
-    telephone: siteConfig.phone,
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "BE",
-      addressRegion: "Vlaanderen",
-      addressLocality: "Gent"
-    },
+    telephone: siteConfig.schemaPhone,
     url: siteConfig.domain,
     knowsAbout: products.map((product) => product.name)
   };

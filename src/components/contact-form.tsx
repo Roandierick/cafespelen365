@@ -127,7 +127,7 @@ export function ContactForm({ contextLabel }: ContactFormProps) {
           <input
             className="input-shell"
             onChange={(event) => updateField("phone", event.target.value)}
-            placeholder="+32 ..."
+            placeholder="+32 468 41 45 55"
             required
             type="tel"
             value={form.phone}
